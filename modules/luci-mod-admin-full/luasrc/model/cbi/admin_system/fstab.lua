@@ -116,21 +116,21 @@ function used.cfgvalue(self, section)
 	) .. ")"
 end
 
-unmount = v:option(Button, "unmount", translate("Unmount"))
-unmount.render = function(self, section, scope)
-	if non_system_mounts[section].umount then
-		self.title = translate("Unmount")
-		self.inputstyle = "remove"
-        	Button.render(self, section, scope)
-	end
-end
+-- unmount = v:option(Button, "unmount", translate("Unmount"))
+-- unmount.render = function(self, section, scope)
+-- 	if non_system_mounts[section].umount then
+-- 		self.title = translate("Unmount")
+-- 		self.inputstyle = "remove"
+--         	Button.render(self, section, scope)
+-- 	end
+-- end
 
-unmount.write = function(self, section)
-	if non_system_mounts[section].umount then
-		luci.sys.call("/bin/umount '%s'" % luci.util.shellstartsqescape(non_system_mounts[section].mountpoint))
-		return luci.http.redirect(luci.dispatcher.build_url("admin/system", "fstab"))
-        end
-end
+-- unmount.write = function(self, section)
+-- 	if non_system_mounts[section].umount then
+-- 		luci.sys.call("/bin/umount '%s'" % luci.util.shellstartsqescape(non_system_mounts[section].mountpoint))
+-- 		return luci.http.redirect(luci.dispatcher.build_url("admin/system", "fstab"))
+--         end
+-- end
 
 mount = m:section(TypedSection, "mount", translate("Mount Points"), translate("Mount Points define at which point a memory device will be attached to the filesystem"))
 mount.anonymous = true
