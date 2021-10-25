@@ -195,3 +195,7 @@ msgstr "uHTTPd 将使用下面显示的配置生成新的自签名证书。"
 
 msgid "ubus integration is disabled if not present"
 msgstr "如果不存在，则禁用 ubus 集成"
+
+msgid "key type"
+msgstr "密钥类型"
+

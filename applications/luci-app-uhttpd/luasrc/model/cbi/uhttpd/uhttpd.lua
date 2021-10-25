@@ -207,6 +207,11 @@ local s = m:section(TypedSection, "cert", translate("uHTTPd Self-signed Certific
 s.template  = "cbi/tsection"
 s.anonymous = true
 
+o= s:option(ListValue, "key_type", translate("key type"))
+o.default = "ec"
+o:value("ec", "ECC")
+o:value("rsa", "RSA")
+
 o = s:option(Value, "days", translate("Valid for # of Days"))
 o.default = 730
 o.datatype = "uinteger"
