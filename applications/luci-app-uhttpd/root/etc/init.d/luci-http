@@ -1,0 +1,72 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2010 Jo-Philipp Wich
+
+START=51
+
+OPENSSL_BIN="/usr/bin/openssl"
+PX5G_BIN="/usr/sbin/px5g"
+
+generate_keys() {
+	local cfg="$1"
+	local key="$2"
+	local crt="$3"
+	local days bits country state location commonname
+
+	config_get days       "$cfg" days
+	config_get bits       "$cfg" bits
+	config_get country    "$cfg" country
+	config_get state      "$cfg" state
+	config_get location   "$cfg" location
+	config_get commonname "$cfg" commonname
+	config_get key_type   "$cfg" key_type
+	config_get ec_curve   "$cfg" ec_curve
+
+	# Prefer px5g for certificate generation (existence evaluated last)
+	local GENKEY_CMD=""
+	local KEY_OPTS="rsa:${bits:-2048}"
+	local UNIQUEID=$(dd if=/dev/urandom bs=1 count=4 | hexdump -e '1/1 "%02x"')
+	[ "$key_type" = "ec" ] && KEY_OPTS="ec -pkeyopt ec_paramgen_curve:${ec_curve:-P-256}"
+	[ -x "$OPENSSL_BIN" ] && GENKEY_CMD="$OPENSSL_BIN req -x509 -sha256 -outform der -nodes"
+	[ -x "$PX5G_BIN" ] && GENKEY_CMD="$PX5G_BIN selfsigned -der"
+	[ -n "$GENKEY_CMD" ] && {
+		$GENKEY_CMD \
+			-days ${days:-730} -newkey ${KEY_OPTS} -keyout "${UHTTPD_KEY}.new" -out "${UHTTPD_CERT}.new" \
+			-subj /C="${country:-ZZ}"/ST="${state:-Somewhere}"/L="${location:-Unknown}"/O="${commonname:-OpenWrt}$UNIQUEID"/CN="${commonname:-OpenWrt}" 1>&2 2>/dev/null
+		sync
+		mv "${UHTTPD_KEY}.new" "${UHTTPD_KEY}"
+		mv "${UHTTPD_CERT}.new" "${UHTTPD_CERT}"
+	}
+}
+
+start_instance()
+{
+	UHTTPD_CERT=""
+	UHTTPD_KEY=""
+	
+	local cfg="$1"
+
+	config_get https "$cfg" listen_https
+	config_get UHTTPD_KEY  "$cfg" key  /etc/uhttpd.key
+	config_get UHTTPD_CERT "$cfg" cert /etc/uhttpd.crt
+
+	[ -f /lib/libustream-ssl.so ] && [ -n "$https" ] && {
+		[ -s "$UHTTPD_CERT" -a -s "$UHTTPD_KEY" ] || {
+		    	config_foreach generate_keys cert
+		}
+	}
+
+}
+
+stop() {
+	/etc/init.d/uhttpd stop
+}
+
+start() {
+	/etc/init.d/uhttpd start
+}
+
+reload(){
+	config_load uhttpd
+	config_foreach start_instance uhttpd
+	/etc/init.d/uhttpd reload
+}
