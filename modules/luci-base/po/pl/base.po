@@ -968,11 +968,22 @@ msgstr "Pobierz kopię zapasową"
 msgid "Dropbear Instance"
 msgstr "Usługa Dropbear"
 
+msgid "Opensshd Instance"
+msgstr "Usługa Opensshd"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear oferuje zdalny dostęp do konsoli (shell`a) poprzez swojego klienta "
+"<abbr title=\"Secure Shell\">SSH</abbr> oraz serwer <abbr title=\"Secure Copy"
+"\">SCP</abbr>"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd oferuje zdalny dostęp do konsoli (shell`a) poprzez swojego klienta "
 "<abbr title=\"Secure Shell\">SSH</abbr> oraz serwer <abbr title=\"Secure Copy"
 "\">SCP</abbr>"
 

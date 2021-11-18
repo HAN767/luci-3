@@ -921,8 +921,16 @@ msgstr "Descarca backup"
 msgid "Dropbear Instance"
 msgstr "Instanta dropbear"
 
+msgid "Opensshd Instance"
+msgstr "Instanta opensshd"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 

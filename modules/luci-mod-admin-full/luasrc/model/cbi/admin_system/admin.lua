@@ -50,6 +50,14 @@ s = m2:section(TypedSection, "dropbear", translate("Dropbear Instance"))
 s.anonymous = true
 s.addremove = true
 
+enable = s:option(Flag, "enable", translate("Enable"),
+	translate("Enable"))
+
+enable .datatype = "bool"
+enable .value = 1
+enable .optional = true
+enable .default  = 1
+enable .rmempty  = false
 
 ni = s:option(Value, "Interface", translate("Interface"),
 	translate("Listen only on the given interface or, if unspecified, on all"))
@@ -57,7 +65,6 @@ ni = s:option(Value, "Interface", translate("Interface"),
 ni.template    = "cbi/network_netlist"
 ni.nocreate    = true
 ni.unspecified = true
-
 
 pt = s:option(Value, "Port", translate("Port"),
 	translate("Specifies the listening port of this <em>Dropbear</em> instance"))
@@ -118,4 +125,48 @@ end
 
 end
 
-return m, m2
+
+if fs.access("/etc/ssh/sshd_config") then
+m3 = Map("dropbear", translate("SSH Access"),
+	translate("Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"))
+
+s = m3:section(TypedSection, "sshd", translate("Opensshd Instance"))
+s.anonymous = true
+s.addremove = true
+
+enable = s:option(Flag, "enable", translate("Enable"),
+	translate("Enable"))
+
+enable .datatype = "bool"
+enable .value = 1
+enable .optional = true
+enable .default  = 1
+enable .rmempty  = false
+
+
+pt = s:option(Value, "Port", translate("Port"),
+	translate("Specifies the listening port of this <em>Dropbear</em> instance"))
+pt.datatype = "port"
+pt.default  = 2222
+
+pa = s:option(Flag, "PasswordAuth", translate("Password authentication"),
+	translate("Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"))
+
+pa.datatype = "bool"
+pa.value = 1
+pa.optional = true
+pa.default  = 1
+pa.rmempty  = false
+
+ra = s:option(Flag, "RootPasswordAuth", translate("Allow root logins with password"),
+	translate("Allow the <em>root</em> user to login with password"))
+
+ra.datatype = "bool"
+ra.value = 1
+ra.optional = true
+ra.default  = 1
+ra.rmempty  = false
+
+end
+
+return m, m2, m3

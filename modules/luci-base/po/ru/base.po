@@ -958,11 +958,21 @@ msgstr "Загрузить резервную копию"
 msgid "Dropbear Instance"
 msgstr "Dropbear"
 
+msgid "Dropbear Instance"
+msgstr "Opensshd"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear - это <abbr title=\"Secure Shell\">SSH</abbr>-сервер со встроенным "
+"<abbr title=\"Secure Copy\">SCP</abbr>"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd - это <abbr title=\"Secure Shell\">SSH</abbr>-сервер со встроенным "
 "<abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid "Dual-Stack Lite (RFC6333)"

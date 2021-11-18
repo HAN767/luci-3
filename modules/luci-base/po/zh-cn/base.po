@@ -963,11 +963,21 @@ msgstr "下游 SNR 偏移"
 msgid "Dropbear Instance"
 msgstr "Dropbear 实例"
 
+msgid "Opensshd Instance"
+msgstr "Opensshd 实例"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear 提供 <abbr title=\"Secure Shell\">SSH</abbr> 访问和 <abbr title="
+"\"Secure Copy\">SCP</abbr> 服务"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd 提供 <abbr title=\"Secure Shell\">SSH</abbr> 访问和 <abbr title="
 "\"Secure Copy\">SCP</abbr> 服务"
 
 msgid "Dual-Stack Lite (RFC6333)"

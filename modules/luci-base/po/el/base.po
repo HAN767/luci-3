@@ -960,11 +960,22 @@ msgstr "Κατέβασμα αντιγράφου ασφαλείας"
 msgid "Dropbear Instance"
 msgstr ""
 
+msgid "Opensshd Instance"
+msgstr ""
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Το Dropbear προσφέρει πρόσβαση σε <abbr title=\"Secure Shell\">SSH</abbr> "
+"κέλυφος μέσω δικτύου και έναν ενσωματωμένο εξυπηρετητή <abbr title=\"Secure "
+"Copy\">SCP</abbr>"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Το Opensshd προσφέρει πρόσβαση σε <abbr title=\"Secure Shell\">SSH</abbr> "
 "κέλυφος μέσω δικτύου και έναν ενσωματωμένο εξυπηρετητή <abbr title=\"Secure "
 "Copy\">SCP</abbr>"
 

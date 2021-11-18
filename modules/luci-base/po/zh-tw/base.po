@@ -930,11 +930,21 @@ msgstr "下載備份檔"
 msgid "Dropbear Instance"
 msgstr "Dropbear SSH例子"
 
+msgid "Opensshd Instance"
+msgstr "Opensshd SSH例子"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear 提供 <abbr title=\"Secure Shell\">SSH</abbr> 網路shell命令存取和一個"
+"整合的 <abbr title=\"Secure Copy\">SCP</abbr> 伺服器"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd 提供 <abbr title=\"Secure Shell\">SSH</abbr> 網路shell命令存取和一個"
 "整合的 <abbr title=\"Secure Copy\">SCP</abbr> 伺服器"
 
 msgid "Dual-Stack Lite (RFC6333)"
