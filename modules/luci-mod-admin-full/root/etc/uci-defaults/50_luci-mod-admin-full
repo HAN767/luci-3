@@ -19,4 +19,12 @@ if [ "$(uci -q get luci.diag)" != "internal" ]; then
 	EOF
 fi
 
+uci -q batch <<-EOF >/dev/null
+        delete ucitrack.@sshd[-1]
+	add ucitrack sshd
+        set ucitrack.@sshd[-1].exec=/etc/init.d/sshd restart
+        commit ucitrack
+EOF
+
+rm -rf /tmp/luci-*
 exit 0
