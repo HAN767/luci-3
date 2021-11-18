@@ -127,10 +127,10 @@ end
 
 
 if fs.access("/etc/ssh/sshd_config") then
-m3 = Map("dropbear", translate("SSH Access"),
-	translate("Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"))
+m3 = Map("ssh", translate("SSH Access"),
+	translate("Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"))
 
-s = m3:section(TypedSection, "sshd", translate("Opensshd Instance"))
+s = m3:section(TypedSection, "ssh", translate("Openssh Instance"))
 s.anonymous = true
 s.addremove = true
 
@@ -145,7 +145,7 @@ enable .rmempty  = false
 
 
 pt = s:option(Value, "Port", translate("Port"),
-	translate("Specifies the listening port of this <em>Dropbear</em> instance"))
+	translate("Specifies the listening port of this <em>Openssh</em> instance"))
 pt.datatype = "port"
 pt.default  = 2222
 

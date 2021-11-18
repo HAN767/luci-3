@@ -928,7 +928,7 @@ msgstr "הורד גיבוי"
 msgid "Dropbear Instance"
 msgstr ""
 
-msgid "Opensshd Instance"
+msgid "Openssh Instance"
 msgstr ""
 
 msgid ""
@@ -939,10 +939,10 @@ msgstr ""
 "title=\"Secure Copy\">SCP</abbr> מובנה"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd מאפשר גישת <abbr title=\"Secure Shell\">SSH</abbr> רשתית ושרת <abbr "
+"Openssh מאפשר גישת <abbr title=\"Secure Shell\">SSH</abbr> רשתית ושרת <abbr "
 "title=\"Secure Copy\">SCP</abbr> מובנה"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2901,6 +2901,9 @@ msgid "Specifies the directory the device is attached to"
 msgstr ""
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
+msgstr ""
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
 msgstr ""
 
 msgid ""

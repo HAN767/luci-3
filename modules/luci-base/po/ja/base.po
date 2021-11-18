@@ -957,8 +957,8 @@ msgstr "バックアップ アーカイブのダウンロード"
 msgid "Dropbear Instance"
 msgstr "Dropbear設定"
 
-msgid "Opensshd Instance"
-msgstr "Opensshd設定"
+msgid "Openssh Instance"
+msgstr "Openssh設定"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -969,10 +969,10 @@ msgstr ""
 "す。"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd は <abbr title=\"Secure Shell\">SSH</abbr> ネットワークへのシェルア"
+"Openssh は <abbr title=\"Secure Shell\">SSH</abbr> ネットワークへのシェルア"
 "クセスと統合された <abbr title=\"Secure Copy\">SCP</abbr> サーバーを提供しま"
 "す。"
 
@@ -3000,6 +3000,9 @@ msgstr "デバイスが接続するディレクトリを設定します"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "<em>Dropbear</em>の受信ポートを設定してください"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "<em>Openssh</em>の受信ポートを設定してください"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

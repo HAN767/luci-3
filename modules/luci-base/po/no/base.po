@@ -945,8 +945,8 @@ msgstr "Last ned sikkerhetskopi"
 msgid "Dropbear Instance"
 msgstr "Dropbear Instans"
 
-msgid "Opensshd Instance"
-msgstr "Opensshd Instans"
+msgid "Openssh Instance"
+msgstr "Openssh Instans"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -956,10 +956,10 @@ msgstr ""
 "tilgang og en integrert <abbr title=\"Secure Copy\">SCP</abbr> server"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd tilbyr <abbr title=\"Secure Shell\">SSH</abbr>-nettverks shell "
+"Openssh tilbyr <abbr title=\"Secure Shell\">SSH</abbr>-nettverks shell "
 "tilgang og en integrert <abbr title=\"Secure Copy\">SCP</abbr> server"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2971,6 +2971,10 @@ msgstr "Hvor lagrings enheten blir tilsluttet filsystemet (f.eks. /mnt/sda1)"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Angir den lyttende porten for denne <em>Dropbear</em> instansen"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Angir den lyttende porten for denne <em>Openssh</em> instansen"
+
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

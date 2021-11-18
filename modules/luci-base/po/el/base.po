@@ -960,7 +960,7 @@ msgstr "Κατέβασμα αντιγράφου ασφαλείας"
 msgid "Dropbear Instance"
 msgstr ""
 
-msgid "Opensshd Instance"
+msgid "Openssh Instance"
 msgstr ""
 
 msgid ""
@@ -972,10 +972,10 @@ msgstr ""
 "Copy\">SCP</abbr>"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Το Opensshd προσφέρει πρόσβαση σε <abbr title=\"Secure Shell\">SSH</abbr> "
+"Το Openssh προσφέρει πρόσβαση σε <abbr title=\"Secure Shell\">SSH</abbr> "
 "κέλυφος μέσω δικτύου και έναν ενσωματωμένο εξυπηρετητή <abbr title=\"Secure "
 "Copy\">SCP</abbr>"
 
@@ -2972,6 +2972,10 @@ msgstr ""
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr ""
 "Προσδιορίζει την θύρα ακρόασης αυτού του στιγμιοτύπου <em>Dropbear</em>"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr ""
+"Προσδιορίζει την θύρα ακρόασης αυτού του στιγμιοτύπου <em>Openssh</em>"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

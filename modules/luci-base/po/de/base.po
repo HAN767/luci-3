@@ -966,8 +966,8 @@ msgstr "Backup herunterladen"
 msgid "Dropbear Instance"
 msgstr "Dropbear Instanz"
 
-msgid "Opensshd Instance"
-msgstr "Opensshd Instanz"
+msgid "Openssh Instance"
+msgstr "Openssh Instanz"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -3060,6 +3060,9 @@ msgstr "Nennt das Verzeichnis, an welches das Gerät angebunden ist"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Gibt den Server-Port dieser <em>Dropbear</em>-Instanz an"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Gibt den Server-Port dieser <em>Openssh</em>-Instanz an"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

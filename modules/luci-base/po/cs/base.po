@@ -949,8 +949,8 @@ msgstr "Stáhnout zálohu"
 msgid "Dropbear Instance"
 msgstr "Instance Dropbear"
 
-msgid "Opensshd Instance"
-msgstr "Instance Opensshd"
+msgid "Openssh Instance"
+msgstr "Instance Openssh"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -960,10 +960,10 @@ msgstr ""
 "title=\"Secure Copy\">SCP</abbr> server"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd poskytuje <abbr title=\"Secure Shell\">SSH</abbr> přístup a <abbr "
+"Openssh poskytuje <abbr title=\"Secure Shell\">SSH</abbr> přístup a <abbr "
 "title=\"Secure Copy\">SCP</abbr> server"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2980,6 +2980,9 @@ msgstr ""
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Určuje port na kterém bude tato instance <em>Dropbearu</em> naslouchat"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Určuje port na kterém bude tato instance <em>Openssh</em> naslouchat"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

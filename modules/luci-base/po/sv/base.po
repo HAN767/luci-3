@@ -908,7 +908,7 @@ msgstr ""
 msgid "Dropbear Instance"
 msgstr ""
 
-msgid "Opensshd Instance"
+msgid "Openssh Instance"
 msgstr ""
 
 msgid ""
@@ -917,7 +917,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 
@@ -2872,6 +2872,10 @@ msgstr ""
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr ""
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr ""
+
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

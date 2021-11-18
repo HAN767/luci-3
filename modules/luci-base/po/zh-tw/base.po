@@ -930,8 +930,8 @@ msgstr "下載備份檔"
 msgid "Dropbear Instance"
 msgstr "Dropbear SSH例子"
 
-msgid "Opensshd Instance"
-msgstr "Opensshd SSH例子"
+msgid "Openssh Instance"
+msgstr "Openssh SSH例子"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -941,10 +941,10 @@ msgstr ""
 "整合的 <abbr title=\"Secure Copy\">SCP</abbr> 伺服器"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd 提供 <abbr title=\"Secure Shell\">SSH</abbr> 網路shell命令存取和一個"
+"Openssh 提供 <abbr title=\"Secure Shell\">SSH</abbr> 網路shell命令存取和一個"
 "整合的 <abbr title=\"Secure Copy\">SCP</abbr> 伺服器"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2923,6 +2923,9 @@ msgstr "指定這個設備被附掛到那個目錄"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "指定這個 <em>Dropbear</em>真實聆聽埠"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "指定這個 <em>Openssh</em>真實聆聽埠"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

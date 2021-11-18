@@ -917,7 +917,7 @@ msgstr ""
 msgid "Dropbear Instance"
 msgstr ""
 
-msgid "Opensshd Instance"
+msgid "Openssh Instance"
 msgstr ""
 
 msgid ""
@@ -928,10 +928,10 @@ msgstr ""
 "truy cập và một <abbr title=\"Secure Copy\">SCP</abbr> server tích hợp"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd cung cấp <abbr title=\"Secure Shell\">SSH</abbr> mạng lưới shell "
+"Openssh cung cấp <abbr title=\"Secure Shell\">SSH</abbr> mạng lưới shell "
 "truy cập và một <abbr title=\"Secure Copy\">SCP</abbr> server tích hợp"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2907,6 +2907,9 @@ msgid "Specifies the directory the device is attached to"
 msgstr ""
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
+msgstr ""
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
 msgstr ""
 
 msgid ""

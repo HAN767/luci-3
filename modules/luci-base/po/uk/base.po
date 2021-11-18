@@ -970,8 +970,8 @@ msgstr "Завантажити резервну копію"
 msgid "Dropbear Instance"
 msgstr "Реалізація Dropbear"
 
-msgid "Opensshd Instance"
-msgstr "Реалізація Opensshd"
+msgid "Openssh Instance"
+msgstr "Реалізація Openssh"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -981,10 +981,10 @@ msgstr ""
 "сервер із вбудованим <abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd — це <abbr title=\"Secure Shell — безпечна оболонка\">SSH</abbr>-"
+"Openssh — це <abbr title=\"Secure Shell — безпечна оболонка\">SSH</abbr>-"
 "сервер із вбудованим <abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -3014,6 +3014,9 @@ msgstr "Визначає каталог, до якого приєднаний п
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Визначає порт прослуховування цієї реалізації <em>Dropbear</em>"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Визначає порт прослуховування цієї реалізації <em>Openssh</em>"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

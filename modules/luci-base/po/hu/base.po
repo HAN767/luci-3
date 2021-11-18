@@ -956,8 +956,8 @@ msgstr "Biztonsági mentés letöltése"
 msgid "Dropbear Instance"
 msgstr "Dropbear példány"
 
-msgid "Opensshd Instance"
-msgstr "Opensshd példány"
+msgid "Openssh Instance"
+msgstr "Openssh példány"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -968,10 +968,10 @@ msgstr ""
 "szolgáltatást nyújt."
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"A Opensshd a hálózaton <abbr title=\"Secure Shell\">SSH</abbr> hozzáférést "
+"A Openssh a hálózaton <abbr title=\"Secure Shell\">SSH</abbr> hozzáférést "
 "tesz lehetővé, valamint integrált <abbr title=\"Secure Copy\">SCP</abbr> "
 "szolgáltatást nyújt."
 
@@ -2999,6 +2999,9 @@ msgstr "Megadja az eszköz csatlakozási könyvtárát."
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Megadja a <em>Dropbear</em> példány portját"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Megadja a <em>Openssh</em> példány portját"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

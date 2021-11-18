@@ -959,7 +959,7 @@ msgid "Dropbear Instance"
 msgstr "Dropbear"
 
 msgid "Dropbear Instance"
-msgstr "Opensshd"
+msgstr "Openssh"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -969,10 +969,10 @@ msgstr ""
 "<abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd - это <abbr title=\"Secure Shell\">SSH</abbr>-сервер со встроенным "
+"Openssh - это <abbr title=\"Secure Shell\">SSH</abbr>-сервер со встроенным "
 "<abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -3001,6 +3001,9 @@ msgstr "Директория, к которой присоединено уст�
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Порт данного процесса <em>Dropbear</em>"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Порт данного процесса <em>Openssh</em>"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

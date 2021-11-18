@@ -968,8 +968,8 @@ msgstr "Pobierz kopię zapasową"
 msgid "Dropbear Instance"
 msgstr "Usługa Dropbear"
 
-msgid "Opensshd Instance"
-msgstr "Usługa Opensshd"
+msgid "Openssh Instance"
+msgstr "Usługa Openssh"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -980,10 +980,10 @@ msgstr ""
 "\">SCP</abbr>"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd oferuje zdalny dostęp do konsoli (shell`a) poprzez swojego klienta "
+"Openssh oferuje zdalny dostęp do konsoli (shell`a) poprzez swojego klienta "
 "<abbr title=\"Secure Shell\">SSH</abbr> oraz serwer <abbr title=\"Secure Copy"
 "\">SCP</abbr>"
 
@@ -3022,6 +3022,9 @@ msgstr "Podaje katalog do którego jest podłączone urządzenie"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Określa port nasłuchu dla tej instancji <em>Dropbear</em>"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Określa port nasłuchu dla tej instancji <em>Openssh</em>"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

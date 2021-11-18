@@ -941,8 +941,8 @@ msgstr "Descarrega còpia de seguritat"
 msgid "Dropbear Instance"
 msgstr "Instància de Dropbear"
 
-msgid "Opensshd Instance"
-msgstr "Instància de Opensshd"
+msgid "Openssh Instance"
+msgstr "Instància de Openssh"
 
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
@@ -952,10 +952,10 @@ msgstr ""
 "\">SSH</abbr>i un servidor <abbr title=\"Secure Copy\">SCP</abbr> integrat"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"El Opensshd ofereix accés per la xarxa a consola <abbr title=\"Secure Shell"
+"El Openssh ofereix accés per la xarxa a consola <abbr title=\"Secure Shell"
 "\">SSH</abbr>i un servidor <abbr title=\"Secure Copy\">SCP</abbr> integrat"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2937,6 +2937,9 @@ msgstr "Especifica el directori a que el dispositiu està adjuntat"
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "Especifica el port d'escolta d'aquesta instància del <em>Dropbear</em>"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "Especifica el port d'escolta d'aquesta instància del <em>Openssh</em>"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "

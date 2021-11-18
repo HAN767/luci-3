@@ -939,7 +939,7 @@ msgstr "백업 다운로드"
 msgid "Dropbear Instance"
 msgstr ""
 
-msgid "Opensshd Instance"
+msgid "Openssh Instance"
 msgstr ""
 
 msgid ""
@@ -950,10 +950,10 @@ msgstr ""
 "<abbr title=\"Secure Copy\">SCP</abbr> 서버 기능을 제공합니다"
 
 msgid ""
-"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"Openssh offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
-"Opensshd 는 <abbr title=\"Secure Shell\">SSH</abbr> network shell 접근과 "
+"Openssh 는 <abbr title=\"Secure Shell\">SSH</abbr> network shell 접근과 "
 "<abbr title=\"Secure Copy\">SCP</abbr> 서버 기능을 제공합니다"
 
 msgid "Dual-Stack Lite (RFC6333)"
@@ -2928,6 +2928,9 @@ msgstr ""
 
 msgid "Specifies the listening port of this <em>Dropbear</em> instance"
 msgstr "<em>Dropbear</em> instance 의 listening 포트를 지정합니다"
+
+msgid "Specifies the listening port of this <em>Openssh</em> instance"
+msgstr "<em>Openssh</em> instance 의 listening 포트를 지정합니다"
 
 msgid ""
 "Specifies the maximum amount of failed ARP requests until hosts are presumed "
