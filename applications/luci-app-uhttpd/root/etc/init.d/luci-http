@@ -62,6 +62,8 @@ stop() {
 }
 
 start() {
+	 config_load uhttpd
+	 config_foreach start_instance uhttpd
 	/etc/init.d/uhttpd start
 }
 
