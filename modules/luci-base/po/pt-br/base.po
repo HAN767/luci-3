@@ -1003,11 +1003,22 @@ msgstr "Baixar a cópia de segurança"
 msgid "Dropbear Instance"
 msgstr "Dropbear"
 
+msgid "Opensshd Instance"
+msgstr "Opensshd"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear oferece um acesso shell seguro à rede <abbr title=\"Shell Seguro"
+"\">(SSH)</abbr> e um servidor <abbr title=\"Cópia Segura\">SCP</abbr> "
+"integrado"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd oferece um acesso shell seguro à rede <abbr title=\"Shell Seguro"
 "\">(SSH)</abbr> e um servidor <abbr title=\"Cópia Segura\">SCP</abbr> "
 "integrado"
 

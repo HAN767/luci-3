@@ -957,11 +957,22 @@ msgstr "バックアップ アーカイブのダウンロード"
 msgid "Dropbear Instance"
 msgstr "Dropbear設定"
 
+msgid "Opensshd Instance"
+msgstr "Opensshd設定"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear は <abbr title=\"Secure Shell\">SSH</abbr> ネットワークへのシェルア"
+"クセスと統合された <abbr title=\"Secure Copy\">SCP</abbr> サーバーを提供しま"
+"す。"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd は <abbr title=\"Secure Shell\">SSH</abbr> ネットワークへのシェルア"
 "クセスと統合された <abbr title=\"Secure Copy\">SCP</abbr> サーバーを提供しま"
 "す。"
 

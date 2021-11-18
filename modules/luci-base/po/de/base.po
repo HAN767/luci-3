@@ -966,6 +966,16 @@ msgstr "Backup herunterladen"
 msgid "Dropbear Instance"
 msgstr "Dropbear Instanz"
 
+msgid "Opensshd Instance"
+msgstr "Opensshd Instanz"
+
+msgid ""
+"Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Der SSH-Server ermöglicht Shell-Zugriff über das Netzwerk und bietet einen "
+"integrierten SCP-Dienst."
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"

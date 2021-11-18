@@ -939,11 +939,21 @@ msgstr "백업 다운로드"
 msgid "Dropbear Instance"
 msgstr ""
 
+msgid "Opensshd Instance"
+msgstr ""
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear 는 <abbr title=\"Secure Shell\">SSH</abbr> network shell 접근과 "
+"<abbr title=\"Secure Copy\">SCP</abbr> 서버 기능을 제공합니다"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd 는 <abbr title=\"Secure Shell\">SSH</abbr> network shell 접근과 "
 "<abbr title=\"Secure Copy\">SCP</abbr> 서버 기능을 제공합니다"
 
 msgid "Dual-Stack Lite (RFC6333)"

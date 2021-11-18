@@ -928,11 +928,21 @@ msgstr "הורד גיבוי"
 msgid "Dropbear Instance"
 msgstr ""
 
+msgid "Opensshd Instance"
+msgstr ""
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear מאפשר גישת <abbr title=\"Secure Shell\">SSH</abbr> רשתית ושרת <abbr "
+"title=\"Secure Copy\">SCP</abbr> מובנה"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd מאפשר גישת <abbr title=\"Secure Shell\">SSH</abbr> רשתית ושרת <abbr "
 "title=\"Secure Copy\">SCP</abbr> מובנה"
 
 msgid "Dual-Stack Lite (RFC6333)"

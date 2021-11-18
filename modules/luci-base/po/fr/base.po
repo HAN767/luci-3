@@ -965,11 +965,21 @@ msgstr "Télécharger la sauvegarde"
 msgid "Dropbear Instance"
 msgstr "Session Dropbear"
 
+msgid "Opensshd Instance"
+msgstr "Session Opensshd"
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear est un serveur <abbr title=\"Secure Shell\">SSH</abbr> et intègre "
+"un serveur <abbr title=\"Secure Copy\">SCP</abbr>"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd est un serveur <abbr title=\"Secure Shell\">SSH</abbr> et intègre "
 "un serveur <abbr title=\"Secure Copy\">SCP</abbr>"
 
 msgid "Dual-Stack Lite (RFC6333)"

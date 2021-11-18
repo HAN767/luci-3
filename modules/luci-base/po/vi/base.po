@@ -917,11 +917,21 @@ msgstr ""
 msgid "Dropbear Instance"
 msgstr ""
 
+msgid "Opensshd Instance"
+msgstr ""
+
 msgid ""
 "Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
 "and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
 msgstr ""
 "Dropbear cung cấp <abbr title=\"Secure Shell\">SSH</abbr> mạng lưới shell "
+"truy cập và một <abbr title=\"Secure Copy\">SCP</abbr> server tích hợp"
+
+msgid ""
+"Opensshd offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access "
+"and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"
+msgstr ""
+"Opensshd cung cấp <abbr title=\"Secure Shell\">SSH</abbr> mạng lưới shell "
 "truy cập và một <abbr title=\"Secure Copy\">SCP</abbr> server tích hợp"
 
 msgid "Dual-Stack Lite (RFC6333)"
