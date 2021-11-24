@@ -169,4 +169,30 @@ ra.rmempty  = false
 
 end
 
+s2 = m3:section(TypedSection, "_dummy", translate("SSH-Keys"),
+	translate("Here you can paste public SSH-Keys (one per line) for SSH public-key authentication."))
+s2.addremove = false
+s2.anonymous = true
+s2.template  = "cbi/tblsection"
+
+function s2.cfgsections()
+	return { "_pub" }
+end
+
+keys = s2:option(TextValue, "_data", "")
+keys.wrap    = "off"
+keys.rows    = 3
+keys.rmempty = false
+
+function keys.cfgvalue()
+	return fs.readfile("/etc/ssh/authorized_pub") or ""
+end
+
+function keys.write(self, section, value)
+	if value then
+		fs.writefile("/etc/ssh/authorized_pub", value:gsub("\r\n", "\n"))
+	end
+end
+
+
 return m, m2, m3
