@@ -19,6 +19,14 @@ ucs:tab("general", translate("General Settings"))
 ucs:tab("server", translate("Full Web Server Settings"), translate("For settings primarily geared to serving more than the web UI"))
 ucs:tab("advanced", translate("Advanced Settings"), translate("Settings which are either rarely needed or which affect serving the WebUI"))
 
+enable = ucs:taboption("general",Flag, "enabled", translate("Enable"),translate("Enable"))
+enable .datatype = "bool"
+enable .value = 1
+enable .optional = true
+enable .default  = 1
+enable .rmempty  = false
+
+
 lhttp = ucs:taboption("general", DynamicList, "listen_http", translate("HTTP listeners (address:port)"), translate("Bind to specific interface:port (by specifying interface address"))
 lhttp.datatype = "list(ipaddrport(1))"
 
