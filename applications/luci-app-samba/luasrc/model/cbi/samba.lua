@@ -10,6 +10,9 @@ s.anonymous = true
 s:tab("general",  translate("General Settings"))
 s:tab("template", translate("Edit Template"))
 
+enabled = s:taboption("general", Flag, "enabled", translate("Enabled"))
+enabled.rmempty = false
+
 s:taboption("general", Value, "name", translate("Hostname"))
 s:taboption("general", Value, "description", translate("Description"))
 s:taboption("general", Value, "workgroup", translate("Workgroup"))
@@ -23,7 +26,7 @@ a.rmempty = false
 a.default = "1"
 
 tmpl = s:taboption("template", Value, "_tmpl",
-	translate("Edit the template that is used for generating the samba configuration."), 
+	translate(""), 
 	translate("This is the content of the file '/etc/samba/smb.conf.template' from which your samba configuration will be generated. " ..
 		"Values enclosed by pipe symbols ('|') should not be changed. They get their values from the 'General Settings' tab."))
 
