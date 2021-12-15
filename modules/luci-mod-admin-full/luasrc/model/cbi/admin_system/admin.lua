@@ -111,16 +111,17 @@ end
 keys = s2:option(TextValue, "_data", "")
 keys.wrap    = "off"
 keys.rows    = 3
-keys.rmempty = false
 
 function keys.cfgvalue()
 	return fs.readfile("/etc/dropbear/authorized_keys") or ""
 end
 
 function keys.write(self, section, value)
-	if value then
-		fs.writefile("/etc/dropbear/authorized_keys", value:gsub("\r\n", "\n"))
-	end
+	return fs.writefile("/etc/dropbear/authorized_keys", value:gsub("\r\n", "\n"))
+end
+
+function keys.remove(self, section, value)
+	return fs.writefile("/etc/dropbear/authorized_keys", "")
 end
 
 end
@@ -182,16 +183,17 @@ end
 keys = s2:option(TextValue, "_data", "")
 keys.wrap    = "off"
 keys.rows    = 3
-keys.rmempty = false
 
 function keys.cfgvalue()
 	return fs.readfile("/etc/ssh/authorized_pub") or ""
 end
 
 function keys.write(self, section, value)
-	if value then
-		fs.writefile("/etc/ssh/authorized_pub", value:gsub("\r\n", "\n"))
-	end
+	return fs.writefile("/etc/ssh/authorized_pub", value:gsub("\r\n", "\n"))
+end
+
+function keys.remove(self, section, value)
+	return fs.writefile("/etc/ssh/authorized_pub", "")
 end
 
 
