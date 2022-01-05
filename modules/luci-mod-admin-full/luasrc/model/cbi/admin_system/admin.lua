@@ -168,8 +168,6 @@ ra.optional = true
 ra.default  = 1
 ra.rmempty  = false
 
-end
-
 s2 = m3:section(TypedSection, "_dummy", translate("SSH-Keys"),
 	translate("Here you can paste public SSH-Keys (one per line) for SSH public-key authentication."))
 s2.addremove = false
@@ -195,6 +193,6 @@ end
 function keys.remove(self, section, value)
 	return fs.writefile("/etc/ssh/authorized_pub", "")
 end
-
+end
 
 return m, m2, m3
