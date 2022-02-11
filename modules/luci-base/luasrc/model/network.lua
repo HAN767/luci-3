@@ -696,9 +696,9 @@ function get_status_list_by_route(self, addr, mask)
 			if s and s.route and  s.device ~= "br-lan" then
 				local rt
 				for _, rt in ipairs(s.route) do
---					if not rt.table and rt.target == addr and rt.mask == mask then
+					if not rt.table and rt.target == addr and rt.mask == mask then
 						route_statuses[net] = s
---					end
+					end
 				end
 			end
 		end
