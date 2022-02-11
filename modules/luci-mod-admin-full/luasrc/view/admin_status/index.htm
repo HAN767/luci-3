@@ -81,7 +81,7 @@
 					expires = v:expires(),
 					uptime  = v:uptime(),
 					proto   = v:proto(),
-					ifname  = v:ifname(),
+					ifname  = v:name(),
 					link    = v:adminlink()
 				}
 				rv.wan[#rv.wan+1] = wan_info
@@ -101,7 +101,7 @@
 					ip6prefix = v:ip6prefix(),
 					uptime    = v:uptime(),
 					proto     = v:proto(),
-					ifname    = v:ifname(),
+					ifname    = v:name(),
 					link      = v:adminlink()
 				}
 				rv.wan6[#rv.wan6+1] = wan6_info
@@ -221,6 +221,7 @@
 					si.style.textAlign= 'center'; 
 					si.style.padding=  '3px'; 
 					si.style.verticalAlign=  'middle';
+					si.style.wordBreak=  'break-all';
 					ss.style.verticalAlign=  'middle';
 					ss.style.padding=  '3px'; 
 
@@ -286,6 +287,7 @@
 				si.style.textAlign= 'center'; 
 				si.style.padding=  '3px'; 
 				si.style.verticalAlign=  'middle';
+				si.style.wordBreak=  'break-all';
 				ss.style.verticalAlign=  'middle';
 				ss.style.padding=  '3px'; 
 
@@ -321,6 +323,7 @@
 					si6.style.padding=  '3px'; 
 					si6.style.verticalAlign=  'middle';
 					ss6.style.verticalAlign=  'middle';
+					si6.style.wordBreak=  'break-all';
 					ss6.style.padding=  '3px'; 
 
 
@@ -401,7 +404,7 @@
 				si6.style.verticalAlign=  'middle';
 				ss6.style.verticalAlign=  'middle';
 				ss6.style.padding=  '3px'; 
-
+				si6.style.wordBreak=  'break-all';
 
 				si6.innerHTML = '<img src="<%=resource%>/icons/ethernet_disabled.png" /><br /><small>?</small>';
 				ss6.innerHTML = '<em><%:Not connected%></em>';				
