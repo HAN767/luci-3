@@ -217,6 +217,14 @@
 					var si=document.createElement("td");
 					var table= document.createElement("table");
 
+					si.style.width=  '100px'; 
+					si.style.textAlign= 'center'; 
+					si.style.padding=  '3px'; 
+					si.style.verticalAlign=  'middle';
+					ss.style.verticalAlign=  'middle';
+					ss.style.padding=  '3px'; 
+
+
 					var ifc = wan_list[index];
 					if (ifc && ifc.ifname && ifc.proto != 'none')
 					{
@@ -274,6 +282,14 @@
 				var si=document.createElement("td");
 				var table= document.createElement("table");
 
+				si.style.width=  '100px'; 
+				si.style.textAlign= 'center'; 
+				si.style.padding=  '3px'; 
+				si.style.verticalAlign=  'middle';
+				ss.style.verticalAlign=  'middle';
+				ss.style.padding=  '3px'; 
+
+
 				si.innerHTML = '<img src="<%=resource%>/icons/ethernet_disabled.png" /><br /><small>?</small>';
 				ss.innerHTML = '<em><%:Not connected%></em>';
 				table.appendChild(si);
@@ -299,6 +315,14 @@
 					var ss6=document.createElement("td");
 					var si6=document.createElement("td");
 					var table6= document.createElement("table");
+
+					si6.style.width=  '100px'; 
+					si6.style.textAlign= 'center'; 
+					si6.style.padding=  '3px'; 
+					si6.style.verticalAlign=  'middle';
+					ss6.style.verticalAlign=  'middle';
+					ss6.style.padding=  '3px'; 
+
 
 					var ifc6 = wan6_list[index];
 					if (ifc6 && ifc6.ifname && ifc6.proto != 'none')
@@ -370,6 +394,14 @@
 				var ss6=document.createElement("td");
 				var si6=document.createElement("td");
 				var table6= document.createElement("table");
+
+				si6.style.width=  '100px'; 
+				si6.style.textAlign= 'center'; 
+				si6.style.padding=  '3px'; 
+				si6.style.verticalAlign=  'middle';
+				ss6.style.verticalAlign=  'middle';
+				ss6.style.padding=  '3px'; 
+
 
 				si6.innerHTML = '<img src="<%=resource%>/icons/ethernet_disabled.png" /><br /><small>?</small>';
 				ss6.innerHTML = '<em><%:Not connected%></em>';				
