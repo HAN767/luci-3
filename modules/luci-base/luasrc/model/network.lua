@@ -965,8 +965,8 @@ function protocol.ip6addrs(self)
 		for n, addr in ipairs(addrs) do
 			if type(addr["local-address"]) == "table" then
 				rv[#rv+1] = "%s/%d" %{
-					addr["local-address"].address,
-					addr["local-address"].mask
+					addr["local-address"].address or "0.0.0.0",
+					addr["local-address"].mask or "0"
 				}
 			end
 		end
@@ -1254,7 +1254,7 @@ function interface.get_i18n(self)
 		return "%s: %s %q" %{
 			lng.translate("Wireless Network"),
 			self.wif:active_mode(),
-			self.wif:active_ssid() or self.wif:active_bssid() or self.wif:id()
+			self.wif:active_ssid() or self.wif:active_bssid() or self.wif:id() or "?"
 		}
 	else
 		return "%s: %q" %{ self:get_type_i18n(), self:name() }
