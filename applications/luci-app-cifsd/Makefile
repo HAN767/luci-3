@@ -5,7 +5,6 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=Network Shares - CIFSD CIFS/SMB kernel fileserver
 LUCI_DEPENDS:=+ksmbd-server
 LUCI_PKGARCH:=all
-
 PKG_NAME:=luci-app-cifsd
 PKG_VERSION:=1
 PKG_RELEASE:=12
