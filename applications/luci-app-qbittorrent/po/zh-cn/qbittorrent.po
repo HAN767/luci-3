@@ -571,3 +571,17 @@ msgstr "使用路由器的 UPnP/NAT-PMP 端口转发，参考 <a href=\"https://
 
 msgid "When enabled, qBittorrent will take certain measures to try to mask its identity. Refer to the <a href=\"https://github.com/qbittorrent/qBittorrent/wiki/Anonymous-Mode\" target=\"_blank\">wiki</a>"
 msgstr "启用后 qBittorrent 将采取某些措施来尝试掩盖其身份，参考<a href=\"https://github.com/qbittorrent/qBittorrent/wiki/Anonymous-Mode\" target=\"_blank\">wiki</a>"
+
+msgid "Bak WebUI"
+msgstr "备用WebUI"
+
+msgid "Use Bak WebUI"
+msgstr "使用备用WebUI."
+
+msgid "File Path"
+msgstr "UI路径"
+
+msgid "Bak WebUI Path"
+msgstr "备用WebUI路径."
+
+

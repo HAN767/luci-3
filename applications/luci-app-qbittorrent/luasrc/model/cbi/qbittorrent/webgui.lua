@@ -53,4 +53,14 @@ o.default = o.disabled
 o = s:option(DynamicList, "AuthSubnetWhitelist", translate("Subnet Whitelist"))
 o:depends("AuthSubnetWhitelistEnabled", "true")
 
+o = s:option(Flag, "AlternativeUIEnabled", translate("Bak WebUI"))
+o.description = translate("Use Bak WebUI")
+o.enabled = "true"
+o.disabled = "false"
+o.default = o.disabled
+
+o = s:option(Value, "RootFolder", translate("File Path"))
+o.description = translate("Bak WebUI Path")
+o:depends("AlternativeUIEnabled", "true")
+
 return m

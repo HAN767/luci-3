@@ -73,6 +73,8 @@ validate_QBT () {
 		'Port:port:8080' \
 		'Username:string' \
 		'UseUPnP:or("true","false"):false' \
+		'AlternativeUIEnabled:or("true","false"):false' \
+		'RootFolder:string' \
 		'AnonymousMode:or("true","false"):true' \
 		'AnnounceToAllTrackers:or("true","false")' \
 		'IgnoreLimitsLAN:or("true","false"):true' \
@@ -160,9 +162,9 @@ EOF
 				"AnnounceToAllTiers" "BTProtocol" "CreateTorrentSubfolder" "DisableAutoTMMByDefault" "GlobalMaxSeedingMinutes" \
 				"SeedChokingAlgorithm" "SlowTorrentsDownloadRate" "SlowTorrentsInactivityTimer" "SlowTorrentsUploadRate"
 	sed_options "Preferences" "WebUI" \
-				"AuthSubnetWhitelistEnabled" "AuthSubnetWhitelist" "CSRFProtection" \
+				"AuthSubnetWhitelistEnabled" "AuthSubnetWhitelist" "CSRFProtection" "AlternativeUIEnabled" \
 				"ClickjackingProtection" "HostHeaderValidation" "LocalHostAuth" \
-				"Password_ha1" "Port" "Username" "UseUPnP"
+				"Password_ha1" "Port" "Username" "UseUPnP" "RootFolder"
 	sed_options "Preferences" "Queueing" \
 				"IgnoreSlowTorrents" "MaxActiveDownloads" "MaxActiveTorrents" "MaxActiveUploads" \
 				"QueueingEnabled"
