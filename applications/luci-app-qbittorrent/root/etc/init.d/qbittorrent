@@ -132,9 +132,9 @@ sed_options () {
 }
 
 config_QBT () {
-	local Password_ha1="";local Age="";local AgeType=""
+	local Password_PBKDF2="";local Age="";local AgeType=""
 	[ -n "$Password" ] && \
-		Password_ha1="@ByteArray($(echo -n $Password|md5sum|grep -oE '[a-z0-9]{32}'))"
+		Password_PBKDF2="@ByteArray($(echo -n $Password|md5sum|grep -oE '[a-z0-9]{32}'))"
 
 	[ -n "$SaveTime" ] && {
 		[ -n "$(echo $SaveTime | sed 's/[0-9dmyDMY]//g')" ] && { _err "Error save time setted."; return 1; }
@@ -164,7 +164,7 @@ EOF
 	sed_options "Preferences" "WebUI" \
 				"AuthSubnetWhitelistEnabled" "AuthSubnetWhitelist" "CSRFProtection" "AlternativeUIEnabled" \
 				"ClickjackingProtection" "HostHeaderValidation" "LocalHostAuth" \
-				"Password_ha1" "Port" "Username" "UseUPnP" "RootFolder"
+				"Password_PBKDF2" "Port" "Username" "UseUPnP" "RootFolder"
 	sed_options "Preferences" "Queueing" \
 				"IgnoreSlowTorrents" "MaxActiveDownloads" "MaxActiveTorrents" "MaxActiveUploads" \
 				"QueueingEnabled"
