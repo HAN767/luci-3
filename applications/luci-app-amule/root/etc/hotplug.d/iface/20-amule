@@ -4,7 +4,7 @@
 /etc/init.d/amule enabled && {
 
 	[ "$ACTION" = "ifup" ] && {
-		/etc/init.d/amule start
+		/etc/init.d/amule restart
 	}
 
 	[ "$ACTION" = "ifdown" ] && {
