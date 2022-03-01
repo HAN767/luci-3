@@ -27,11 +27,9 @@ o.placeholder = translate("192.168.1.10-20")
 o.rmempty = true
 o.default = "192.168.1.10-20"
 
-o = s:option(Value, "dns", translate("DNS IP address"), translate("This will be sent to the client, it not required."))
-o.placeholder = translate("192.168.1.1")
+o = s:option(DynamicList, "dns", translate("DNS IP address"), translate("This will be sent to the client, it not required."))
 o.datatype = "ipaddr"
-o.rmempty = true
-o.default = "192.168.1.1"
+o.rmempty = false
 
 o = s:option(Flag, "mppe", translate("Enable MPPE Encryption"), translate("Allows 128-bit encrypted connection."))
 o.rmempty = false

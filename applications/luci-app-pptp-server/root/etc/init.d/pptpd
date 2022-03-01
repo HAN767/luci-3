@@ -74,6 +74,12 @@ setup_login() {
 	echo "$username $SERVER_NAME $password $ipaddress" >> $CHAP_SECRETS
 }
 
+append_dns(){
+	[ -z "$1" ] && dns="8.8.4.4"
+	echo "ms-dns $1">>/etc/ppp/options.pptpd
+
+}
+
 setup_config() {
 	config_get enabled $1 enabled
 	[ "$enabled" -eq 0 ] && return 1
@@ -94,9 +100,11 @@ setup_config() {
 	[ -n "$mppe" ] && [ "$mppe" -eq 1 ] && echo "mppe required,no40,no56,stateless" >> /etc/ppp/options.pptpd
 	
 	sed -i '/ms-dns/d' /etc/ppp/options.pptpd
-	config_get dns $1 dns
-	[ -z "$dns" ] && dns="8.8.4.4"
-	echo "ms-dns $dns">>/etc/ppp/options.pptpd
+
+	config_list_foreach $1 dns append_dns
+#	config_get dns $1 dns
+#	[ -z "$dns" ] && dns="8.8.4.4"
+#	echo "ms-dns $dns">>/etc/ppp/options.pptpd
 	
 	return 0
 }
