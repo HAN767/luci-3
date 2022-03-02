@@ -128,7 +128,11 @@ amule() {
 		#[ -z "$runasuser" ] || set_owner "$config_dir" $runasuser $group
 	#}
 	
-	
+	rm -rf  $config_dir/libantiLeech.so >/dev/null 2>&1
+	if [[ -f "/usr/share/amule/libantiLeech.so" ]] ; then
+		ln -s /usr/share/amule/libantiLeech.so $config_dir
+	fi
+
 	touch "$config_file"
 	write_dat_file /etc/amule/addresses.dat "$config_dir/addresses.dat"
 	write_dat_file /etc/amule/shareddir.dat "$config_dir/shareddir.dat"
